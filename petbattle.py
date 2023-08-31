@@ -9,8 +9,7 @@ class Pet:
     self.knocked_out = False
 
   def __repr__(self):
-    return
-    '{name} is a {type} type, with {attack} attack and {health} health.'.format(name = self.name, type = self.type, attack = self.attack, health = self.health)
+    return '{name} is a {type} type, with {attack} attack and {health} health.'.format(name = self.name, type = self.type, attack = self.attack, health = self.health)
 
   def knocked_out(self):
     self.knocked_out = True
@@ -41,7 +40,7 @@ class Pet:
   def attacking(self, other_pet):
     if self.knocked_out:
       print('{name} cannot attack, they are knocked out!'.format(name = self.name))
-    return
+    
 
     if (self.type == 'Fire' and other_pet.type == 'Water') or (self.type == 'Nature' and other_pet.type == 'Fire') or (self.type == 'Water' and other_pet.type == 'Nature') or (self.type == 'Flying' and other_pet.type == 'Electric') or (self.type == 'Electric' and other_pet.type == 'Water'):
       print('{myname} attacked {otherpet} for {damage} damage'.format(myname = self.name, otherpet = other_pet.name, damage = self.attack / 2))
@@ -64,12 +63,12 @@ class Player:
     self.name = name
     self.current_pet = 0
 
-    def __repr__(self):
-        'The player {name} has the following pets'.format(name = self.name)
+  def __repr__(self):
+    'The player {name} has the following pets'.format(name = self.name)
     for pet in self.pets:
       print(pet)
-    return
-    'The player\'s current pet is {name}'.format(name = self.pets[self.current_pet].name)
+    return 'The player\'s current pet is {name}'.format(name = self.pets[self.current_pet].name)
+    
 
   def switch_active_pet(self, new_active):
     if new_active < len(self.pets) and new_active >= 0:
@@ -135,7 +134,7 @@ else:
   player_2_pets.append(d)
   player_1_pets.append(c)
 
-  choice = input(player_1_name + ' for you last pet, please choose between "Lil Thrall" or "Tonka Tank". ' + player_2_name + ' will recieve the one you do not choose. ')
+choice = input(player_1_name + ' for you last pet, please choose between "Lil Thrall" or "Tonka Tank". ' + player_2_name + ' will recieve the one you do not choose. ')
 
 while choice != 'Lil Thrall' and choice != 'Tonka Tank':
   choice = input('Oops, looks like your choice was invalid, please try again. ')
