@@ -6,8 +6,8 @@ Pet Battle Game is a console-based game written in Python where players can batt
 # Features
 Multiple pet types with different attributes,
  Player vs Player battles,
- Use of potions to heal pets
-Ability to switch active pets during battle, 
+ Use of potions to heal pets and the
+ ability to switch active pets during battle, 
 
 # Prerequisites
 Python 3
@@ -30,7 +30,7 @@ Follow the in-game prompts to play.
 # How to Play
 At your turn, you have the following options:
 
- Attack: Attack the opponent's pet.
- Swap: Swap your current pet.
- Potion: Use a potion to heal your pet.
- Your goal is to defeat all of your opponent's pets.
+- Attack: Attack the opponent's pet.
+- Swap: Swap your current pet.
+- Potion: Use a potion to heal your pet.
+- Your goal is to defeat all of your opponent's pets.
